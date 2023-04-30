@@ -1,0 +1,23 @@
+Raja@MMDC02FP51RMD6R newsetup % keytool -genkey -alias fencealias -keyalg RSA -keystore fence.jks
+Enter keystore password:fencekspwd
+Re-enter new password:fencekspwddd
+They don't match. Try again
+Enter keystore password:fencekspwd
+Re-enter new password:fencekspwd
+What is your first and last name?
+  [Unknown]:  Raja Datla
+What is the name of your organizational unit?
+  [Unknown]:  GMG
+What is the name of your organization?
+  [Unknown]:  TM
+What is the name of your City or Locality?
+  [Unknown]:  Reading
+What is the name of your State or Province?
+  [Unknown]:  Berks
+What is the two-letter country code for this unit?
+  [Unknown]:  GB
+Is CN=Raja Datla, OU=GMG, O=TM, L=Reading, ST=Berks, C=GB correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 90 days
+	for: CN=Raja Datla, OU=GMG, O=TM, L=Reading, ST=Berks, C=GB

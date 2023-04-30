@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5555/fencekc}
+    username: ${POSTGRES_USER:fenceuser}
+    password: ${POSTGRES_PASS:fencepwd}
+    driverClassName: org.postgresql.Driver
+keycloak:
+  server:
+    adminUser:
+      username: fuser
+      password: fpwd
+    realmImportFile: realm-fencedev.json
+
+server:
+  port: '11000'
