@@ -28,7 +28,7 @@
 			"error-level": "warn"
 		},
 		"event-queue": {
-			
+
 		}
 	},
 	"realm": {
@@ -98,11 +98,11 @@
 	},
 	"connectionsJpa": {
 		"default": {
-			"url": "${keycloak.connectionsJpa.url:FENCEJDBCURL}",
+			"url": "${keycloak.connectionsJpa.url:jdbc:postgresql://localhost:5555/fencekc}",
 			"driver": "${keycloak.connectionsJpa.driver:org.postgresql.Driver}",
 			"driverDialect": "${keycloak.connectionsJpa.driverDialect:org.hibernate.dialect.PostgreSQLDialect}",
-			"user": "${keycloak.connectionsJpa.user:FENCEJDBCUSER}",
-			"password": "${keycloak.connectionsJpa.password:FENCEJDBCPWD}",
+			"user": "${keycloak.connectionsJpa.user:fenceuser}",
+			"password": "${keycloak.connectionsJpa.password:fencepwd}",
 			"initializeEmpty": true,
 			"migrationStrategy": "update",
 			"showSql": "${keycloak.connectionsJpa.showSql:false}",

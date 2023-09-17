@@ -98,7 +98,7 @@
 	},
 	"connectionsJpa": {
 		"default": {
-			"url": "${keycloak.connectionsJpa.url:jdbc:postgresql://postgres/fencekc}",
+			"url": "${keycloak.connectionsJpa.url:jdbc:postgresql://localhost:5555/fencekc}",
 			"driver": "${keycloak.connectionsJpa.driver:org.postgresql.Driver}",
 			"driverDialect": "${keycloak.connectionsJpa.driverDialect:org.hibernate.dialect.PostgreSQLDialect}",
 			"user": "${keycloak.connectionsJpa.user:fenceuser}",
@@ -106,7 +106,7 @@
 			"initializeEmpty": true,
 			"migrationStrategy": "update",
 			"showSql": "${keycloak.connectionsJpa.showSql:false}",
-			"formatSql": "${keycloak.connectionsJpa.formatSql:true}",
+			"formatSql": "${keycloak.connectionsJpa.formatSql:false}",
 			"globalStatsInterval": "${keycloak.connectionsJpa.globalStatsInterval:-1}"
 		}
 	},
